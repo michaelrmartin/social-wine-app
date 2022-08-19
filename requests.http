@@ -1,7 +1,21 @@
-# Wines Index
+### Wines Index
 GET http://localhost:3000/wines.json
 
-#Wines Show
+### Wines Create
+POST http://localhost:3000/wines.json
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "producer": "Test Producer",
+  "vintage": 2022,
+  "blend": "Test blend",
+  "color": "Test color",
+  "sparkling": true,
+  "price": 5.99
+}
+
+### Wines Show
 GET http://localhost:3000/wines/1.json
 
 
