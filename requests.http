@@ -1,1 +1,7 @@
+# Wines Index
 GET http://localhost:3000/wines.json
+
+#Wines Show
+GET http://localhost:3000/wines/1.json
+
+
