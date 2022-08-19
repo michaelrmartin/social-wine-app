@@ -20,6 +20,21 @@ class WinesController < ApplicationController
     render json: wine.as_json
   end
 
+  def update
+    wine_id = params["id"]
+    wine = Wine.find_by(id: wine_id)
+    wine.name = params[:name] || wine.name
+    wine.producer = params[:producer] || wine.producer
+    wine.vintage = params[:vintage] || wine.vintage
+    wine.blend = params[:blend] || wine.blend
+    wine.color = params[:color] || wine.color
+    wine.sparkling = params[:sparkling] || wine.sparkling
+    wine.price = params[:price] || wine.price
+
+    wine.save
+    render json: wine.as_json
+  end
+
   def show
     wine_id = params["id"]
     wine = Wine.find_by(id: wine_id)
@@ -27,5 +42,10 @@ class WinesController < ApplicationController
     render json: wine.as_json
   end
 
+  def destroy
+    wine = Wine.find_by(id: params[:id])
+    wine.destroy
+    render json: {message: "Wine successfully destroyed."}
+  end
 
 end

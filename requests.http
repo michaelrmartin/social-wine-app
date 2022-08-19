@@ -18,4 +18,19 @@ Content-Type: application/json
 ### Wines Show
 GET http://localhost:3000/wines/1.json
 
+### Wines Update
+PATCH http://localhost:3000/wines/5.json
+Content-Type: application/json
 
+{
+  "name": "Test name",
+  "producer": "Test Producer",
+  "vintage": 2021,
+  "blend": "Test blend",
+  "color": "Test color",
+  "sparkling": true,
+  "price": 4.99
+}
+
+### Wines Destroy
+DELETE http://localhost:3000/wines/5.json
