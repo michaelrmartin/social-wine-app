@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   delete "/wines/:id" =>
   "wines#destroy"
 
+  #users
+  post "/users" => "users#create"
 
 end
