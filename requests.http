@@ -33,4 +33,24 @@ Content-Type: application/json
 }
 
 ### Wines Destroy
-DELETE http://localhost:3000/wines/5.json
+DELETE http://localhost:3000/wi
+
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
