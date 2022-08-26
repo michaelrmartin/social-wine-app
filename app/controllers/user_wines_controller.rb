@@ -1,0 +1,3 @@
+class UserWinesController < ApplicationController
+
+end
