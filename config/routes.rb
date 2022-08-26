@@ -14,4 +14,9 @@ Rails.application.routes.draw do
   #sessions
   post "/sessions" => "sessions#create"
 
+  #user_wines
+
+  get "/user_wines" => "user_wines#index"
+  post "/user_wines" => "user_wines#create"
+
 end

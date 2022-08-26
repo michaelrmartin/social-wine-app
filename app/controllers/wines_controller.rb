@@ -39,7 +39,7 @@ class WinesController < ApplicationController
     wine_id = params["id"]
     wine = Wine.find_by(id: wine_id)
 
-    render json: wine.as_json
+    render json: wine.as_json(methods: [:user_wines, :category_wines])
   end
 
   def destroy

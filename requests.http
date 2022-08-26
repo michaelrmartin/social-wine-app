@@ -1,3 +1,5 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE1NjUyNDZ9.3RTNidYth4Iqn6QAxSy2rFghfuSmx8PNLs10LORWbPw
+
 ### Wines Index
 GET http://localhost:3000/wines.json
 
@@ -53,4 +55,12 @@ Content-Type: application/json
 {
   "email": "test@test.com",
   "password": "password"
+}
+
+### User Wine Create
+POST http://localhost:3000/user_wines.json
+Authorization: Bearer {{jwt}}
+
+{
+  "product_id": 1
 }
