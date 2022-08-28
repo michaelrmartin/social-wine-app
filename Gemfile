@@ -49,3 +49,4 @@ end
 
 gem "http"
 gem "jb"
+gem "seed_dump"

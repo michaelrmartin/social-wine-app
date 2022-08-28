@@ -1,9 +1,17 @@
 class WinesController < ApplicationController
 
   def index
-    wines = Wine.all
+    @wines = Wine.all
 
-    render json: wines.as_json
+    render template: "wines/index"
+  end
+
+  def show
+    wine_id = params["id"]
+    @wine = Wine.find_by(id: wine_id)
+
+    render template: "wines/show"
+
   end
 
   def create
@@ -14,32 +22,33 @@ class WinesController < ApplicationController
       blend: params[:blend],
       price: params[:price]
     )
+
     if wine.save
       @wine = wine
-      render json: wine.as_json
+      render template: "wines/show"
     else
       render json: {errors: wine.errors.full_messages}, status: 422
     end
+
   end
 
   def update
     wine_id = params["id"]
     wine = Wine.find_by(id: wine_id)
+
     wine.name = params[:name] || wine.name
     wine.producer = params[:producer] || wine.producer
     wine.vintage = params[:vintage] || wine.vintage
     wine.blend = params[:blend] || wine.blend
     wine.price = params[:price] || wine.price
 
-    wine.save
-    render json: wine.as_json
-  end
-
-  def show
-    wine_id = params["id"]
-    wine = Wine.find_by(id: wine_id)
-
-    render json: wine.as_json
+    if wine.save
+      @wine = wine
+      render template:  "wines/show"
+    else 
+      render json: {errors: wine.errors.full_messages} ,
+      status: 422
+    end
 
   end
 

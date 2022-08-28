@@ -18,5 +18,9 @@ Rails.application.routes.draw do
 
   get "/user_wines" => "user_wines#index"
   post "/user_wines" => "user_wines#create"
+  get "/user_wines/:id" => "user_wines#show"
+  patch "/user_wines/:id" => "user_wines#update"
+  delete "/user_wines/:id" =>
+  "user_wines#destroy"
 
 end

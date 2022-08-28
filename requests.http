@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE3MDc3MDF9.Cg9OsL8YKixANArC3RXz3CSGIu10oW1pJ_bJ0FJYJgs
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE3OTgwNjZ9.91snjMYLr_cDBBqXL-9fFuukIBJApGFC1MKnWA3Yjgk
 
 ### Wines Index
 GET http://localhost:3000/wines.json
@@ -8,7 +8,7 @@ POST http://localhost:3000/wines.json
 Content-Type: application/json
 
 {
-  "name": "Test name",
+  "name": "Test name 2",
   "producer": "Test Producer",
   "vintage": 2022,
   "blend": "Test blend",
@@ -53,10 +53,24 @@ Content-Type: application/json
   "password": "password"
 }
 
+### User Wine Index
+GET http://localhost:3000/user_wines.json
+Content-Type: application/json  
+Authorization: Bearer {{jwt}}
+
+### User Wine Show
+GET http://localhost:3000/user_wines/1.json
+Content-Type: application/json  
+Authorization: Bearer {{jwt}}
+
 ### User Wine Create
 POST http://localhost:3000/user_wines.json
+Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 {
   "wine_id": 1
 }
+
+
+###
