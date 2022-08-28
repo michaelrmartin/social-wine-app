@@ -8,13 +8,17 @@ class UserWinesController < ApplicationController
   def create
     user_wine = UserWine.new(
       user_id: current_user.id,
-      product_id: params[:product_id],
-      favorite: false
+      wine_id: params[:wine_id]
     )
 
-    user_wine.save
-    @user_wine = user_wine
-    render json: user_wine.as_json
+
+    if user_wine.save
+      @user_wine = user_wine
+      render json: user_wine.as_json
+    else
+      render json: {errors: user_wine.errors.full_messages}, status: 422
+    end
+
   end
 
 end

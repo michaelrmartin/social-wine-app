@@ -12,12 +12,14 @@ class WinesController < ApplicationController
       producer: params[:name],
       vintage: params[:vintage],
       blend: params[:blend],
-      color: params[:color],
-      sparkling: params[:sparkling],
       price: params[:price]
     )
-    wine.save
-    render json: wine.as_json
+    if wine.save
+      @wine = wine
+      render json: wine.as_json
+    else
+      render json: {errors: wine.errors.full_messages}, status: 422
+    end
   end
 
   def update
@@ -27,8 +29,6 @@ class WinesController < ApplicationController
     wine.producer = params[:producer] || wine.producer
     wine.vintage = params[:vintage] || wine.vintage
     wine.blend = params[:blend] || wine.blend
-    wine.color = params[:color] || wine.color
-    wine.sparkling = params[:sparkling] || wine.sparkling
     wine.price = params[:price] || wine.price
 
     wine.save
@@ -39,7 +39,8 @@ class WinesController < ApplicationController
     wine_id = params["id"]
     wine = Wine.find_by(id: wine_id)
 
-    render json: wine.as_json(methods: [:user_wines, :category_wines])
+    render json: wine.as_json
+
   end
 
   def destroy
