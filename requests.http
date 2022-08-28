@@ -31,7 +31,7 @@ Content-Type: application/json
 }
 
 ### Wines Destroy
-DELETE http://localhost:3000/wines/8
+DELETE http://localhost:3000/wines/10
 
 ### Users create (signup)
 POST http://localhost:3000/users.json
