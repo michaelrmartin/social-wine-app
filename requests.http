@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE3OTgwNjZ9.91snjMYLr_cDBBqXL-9fFuukIBJApGFC1MKnWA3Yjgk
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE5MDY1NjR9.uCdKGB4L2lgSnMg2_xZs3skFCk-kEePPFChg7u68RH8
 
 ### Wines Index
 GET http://localhost:3000/wines.json
@@ -38,8 +38,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Test name",
-  "email": "test@test.com",
+  "name": "Michael",
+  "email": "michael@test.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -49,7 +49,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "michael@test.com",
   "password": "password"
 }
 
@@ -69,8 +69,5 @@ Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 {
-  "wine_id": 1
+  "wine_id": 2
 }
-
-
-###
