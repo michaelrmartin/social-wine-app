@@ -1,4 +1,4 @@
 class CategoryWine < ApplicationRecord
-  belongs_to :wines
-  belongs_to :categories
+  belongs_to :wine
+  belongs_to :category
 end

@@ -6,6 +6,9 @@
     vintage: wine.vintage,
     blend: wine.blend,
     price: wine.price,
-    friendly_created_at: wine.friendly_created_at
+    friendly_created_at: wine.friendly_created_at,
+    users: wine.users,
+    origin: wine.origins, 
+    category: wine.categories
   }
 end
