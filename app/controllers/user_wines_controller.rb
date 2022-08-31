@@ -2,7 +2,7 @@ class UserWinesController < ApplicationController
   
   def index
     user_wines = current_user.user_wines
-    render json: user_wines.as_json
+    render json: user_wines.as_json(methods: [:wine])
   end
 
 

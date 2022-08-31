@@ -9,7 +9,10 @@ Rails.application.routes.draw do
   "wines#destroy"
 
   #users
+  get "/users" => "users#index"
   post "/users" => "users#create"
+  get "/users/:id" => "users#show"
+
 
   #sessions
   post "/sessions" => "sessions#create"

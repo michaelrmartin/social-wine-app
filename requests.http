@@ -72,3 +72,7 @@ Authorization: Bearer {{jwt}}
   "wine_id": 4
   
 }
+
+### User Show
+GET http://localhost:3000/users/1.json
+Content-Type: application/json
