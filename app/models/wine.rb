@@ -14,5 +14,4 @@ class Wine < ApplicationRecord
     created_at.strftime("%B %e, %Y")
   end
 
-
 end

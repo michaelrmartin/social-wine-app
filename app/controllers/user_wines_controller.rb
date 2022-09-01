@@ -9,7 +9,8 @@ class UserWinesController < ApplicationController
   def create
     user_wine = UserWine.new(
       user_id: current_user.id,
-      wine_id: params[:wine_id]
+      wine_id: params[:wine_id], 
+      favorite: false
     )
 
 
