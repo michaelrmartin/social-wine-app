@@ -26,4 +26,8 @@ Rails.application.routes.draw do
   delete "/user_wines/:id" =>
   "user_wines#destroy"
 
+  #category_wines
+
+  post "/category_wines" => "category_wines#create"
+
 end
