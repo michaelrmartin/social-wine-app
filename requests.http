@@ -1,4 +1,5 @@
 @jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjE5ODkzOTB9.ID5-Z3siD7_7tzv9TTT9ePpuqT0YUmwAuP6dytmcaSE
+Rosé
 
 ### Wines Index
 GET http://localhost:3000/wines.json
@@ -8,8 +9,8 @@ POST http://localhost:3000/category_wines.json
 Content-Type: application/json
 
 {
-  "category_id": "10",
-  "wine_id": "11"
+  "category_id": "8",
+  "wine_id": "34"
 }
 
 ### Wines Create
@@ -17,24 +18,23 @@ POST http://localhost:3000/wines.json
 Content-Type: application/json
 
 {
-  "name": "Ca' Storica Amarone della Valpolicella",
-  "blend": "Corvina, Rondinealla, Molinara",
-  "price": 15.99,
-  "origin_id": 4,
-  "style": "Bold with a long and silky finish",
-  "description": "Notes of ripe cherry, raspberry, cocoa and dried fruit."
+  "name": "Charles de Marques Champagne",
+  "blend": "Pinot Noir, Pinot Meunier",
+  "origin_id": 1,
+  "price": 19.99,
+  "style": "Fresh, round, and balanced",
+  "description": "Toasty brioche, with red apple, citrus, and a hint of rosemary."
 }
 
 ### Wines Show
-GET http://localhost:3000/wines/1.json
+GET http://localhost:3000/wines/12.json
 
 ### Wines Update
-PATCH http://localhost:3000/wines/7.json
+PATCH http://localhost:3000/wines/33.json
 Content-Type: application/json
 
 {
-  "style": "Very oaky and buttery",
-  "description": "Toasty vanilla, ripe baked apple, pear, and tropical fruit -  and, of course, butter."
+  "name": "Finca Flichman Gestos Malbec"
 }
 
 ### Wines Destroy

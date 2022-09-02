@@ -1,7 +1,6 @@
 {
   id: @wine.id,
   name: @wine.name,
-  vintage: @wine.vintage,
   blend: @wine.blend,
   price: @wine.price,
   origin: @wine.origin,

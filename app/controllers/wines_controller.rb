@@ -17,7 +17,6 @@ class WinesController < ApplicationController
   def create
     wine = Wine.new(
       name: params[:name],
-      vintage: params[:vintage],
       blend: params[:blend],
       price: params[:price],
       origin_id: params[:origin_id],
@@ -39,7 +38,6 @@ class WinesController < ApplicationController
     wine = Wine.find_by(id: wine_id)
 
     wine.name = params[:name] || wine.name
-    wine.vintage = params[:vintage] || wine.vintage
     wine.blend = params[:blend] || wine.blend
     wine.price = params[:price] || wine.price
     wine.origin_id = params[:origin_id] || wine.origin_id
