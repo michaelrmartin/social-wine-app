@@ -1,9 +1,13 @@
 {
   id: @wine.id,
   name: @wine.name,
-  producer: @wine.producer,
   vintage: @wine.vintage,
   blend: @wine.blend,
   price: @wine.price,
+  origin: @wine.origin,
+  style: @wine.style,
+  description: @wine.description,
+  categories: @wine.categories,
+  users: @wine.users,
   friendly_created_at: @wine.friendly_created_at
 }

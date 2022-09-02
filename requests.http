@@ -3,16 +3,26 @@
 ### Wines Index
 GET http://localhost:3000/wines.json
 
+### Category Wine Create
+POST http://localhost:3000/category_wines.json
+Content-Type: application/json
+
+{
+  "category_id": "10",
+  "wine_id": "11"
+}
+
 ### Wines Create
 POST http://localhost:3000/wines.json
 Content-Type: application/json
 
 {
-  "name": "Test name 2",
-  "producer": "Test Producer",
-  "vintage": 2022,
-  "blend": "Test blend",
-  "price": 5.99
+  "name": "Ca' Storica Amarone della Valpolicella",
+  "blend": "Corvina, Rondinealla, Molinara",
+  "price": 15.99,
+  "origin_id": 4,
+  "style": "Bold with a long and silky finish",
+  "description": "Notes of ripe cherry, raspberry, cocoa and dried fruit."
 }
 
 ### Wines Show
@@ -23,11 +33,8 @@ PATCH http://localhost:3000/wines/7.json
 Content-Type: application/json
 
 {
-  "name": "Test name",
-  "producer": "Test Producer",
-  "vintage": 2021,
-  "blend": "Test blend",
-  "price": 4.99
+  "style": "Very oaky and buttery",
+  "description": "Toasty vanilla, ripe baked apple, pear, and tropical fruit -  and, of course, butter."
 }
 
 ### Wines Destroy
