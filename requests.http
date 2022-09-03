@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjE5ODkzOTB9.ID5-Z3siD7_7tzv9TTT9ePpuqT0YUmwAuP6dytmcaSE
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjIzMTI5OTR9.TmAA8f_YS1OeBCGiR-Qx_6hZU1o_w0MWqqcmuS-ZTO8
 Rosé
 
 ### Wines Index
@@ -56,7 +56,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "caryn@test.com",
   "password": "password"
 }
 
@@ -76,7 +76,8 @@ Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 {
-  "wine_id": 4
+  "wine_id": 9,
+  "favorite": true
   
 }
 

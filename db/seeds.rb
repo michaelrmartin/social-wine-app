@@ -24,7 +24,7 @@ Origin.create!([
   {country: "Italy"},
   {country: "New Zealand"},
   {country: "Hungary"},
-  {country: "Germanny"},
+  {country: "Germany"},
   {country: "Australia"},
   {country: "South Africa"},
   {country: "Argentina"}
