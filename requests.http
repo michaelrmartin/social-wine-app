@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjIzMTI5OTR9.TmAA8f_YS1OeBCGiR-Qx_6hZU1o_w0MWqqcmuS-ZTO8
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI0MDU1MDJ9.cOn9ZflB8inRN2Qa_UfUTOgsHWKMzk2qKmnoKXXPu4s
 Rosé
 
 ### Wines Index
@@ -56,7 +56,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "caryn@test.com",
+  "email": "michael@test.com",
   "password": "password"
 }
 
