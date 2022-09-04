@@ -8,6 +8,7 @@
     description: wine.description,
     users: wine.users, 
     origin: wine.origin,
+    country: wine.origin.country,
     category: wine.categories,
     friendly_created_at: wine.friendly_created_at,
   }

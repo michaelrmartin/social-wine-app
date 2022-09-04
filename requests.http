@@ -77,7 +77,6 @@ Authorization: Bearer {{jwt}}
 
 {
   "wine_id": 9,
-  "favorite": true
   
 }
 

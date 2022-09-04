@@ -2,6 +2,7 @@
   {
     id: user.id,
     name: user.name,
-    wines: user.wines
+    wines: user.wines,
+    user_wines: user.user_wines
   }
 end
