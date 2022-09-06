@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   post "/users" => "users#create"
   get "/users/:id" => "users#show"
 
-
   #sessions
   post "/sessions" => "sessions#create"
 
@@ -26,7 +25,9 @@ Rails.application.routes.draw do
   "user_wines#destroy"
 
   #category_wines
-
   post "/category_wines" => "category_wines#create"
+
+  #twilio
+  post "/sendtext" => "twilio#index"
 
 end
