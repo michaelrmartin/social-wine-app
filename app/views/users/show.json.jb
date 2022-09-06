@@ -2,5 +2,8 @@
   id: @user.id,
   name: @user.name,
   wines: @user.wines,
-  user_wines: @user.user_wines
+  user_wines: @user.user_wines,
+  bio: @user.bio,
+  location: @user.location,
+  photo_url: @user.photo_url
 }

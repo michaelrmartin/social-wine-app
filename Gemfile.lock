@@ -81,6 +81,10 @@ GEM
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.11.0)
+    faraday (2.5.2)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (3.0.0)
     ffi (1.15.5)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -171,12 +175,17 @@ GEM
     rake (13.0.6)
     reline (0.3.1)
       io-console (~> 0.5)
+    ruby2_keywords (0.0.5)
     seed_dump (3.3.1)
       activerecord (>= 4)
       activesupport (>= 4)
     strscan (3.0.4)
     thor (1.2.1)
     timeout (0.3.0)
+    twilio-ruby (5.71.0)
+      faraday (>= 0.9, < 3.0)
+      jwt (>= 1.5, <= 2.5)
+      nokogiri (>= 1.6, < 2.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     unf (0.1.4)
@@ -202,6 +211,7 @@ DEPENDENCIES
   rack-cors
   rails (~> 7.0.3, >= 7.0.3.1)
   seed_dump
+  twilio-ruby (~> 5.71.0)
   tzinfo-data
 
 RUBY VERSION

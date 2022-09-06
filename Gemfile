@@ -50,3 +50,4 @@ end
 gem "http"
 gem "jb"
 gem "seed_dump"
+gem 'twilio-ruby', '~> 5.71.0'
