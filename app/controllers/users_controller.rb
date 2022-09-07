@@ -17,6 +17,7 @@ class UsersController < ApplicationController
       password_confirmation: params[:password_confirmation],
       bio: params[:bio],
       location: params[:location],
+      phone: params[:phone],
       photo_url: cloudinary_url
     )
     if user.save

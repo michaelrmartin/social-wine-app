@@ -5,5 +5,6 @@
   user_wines: @user.user_wines,
   bio: @user.bio,
   location: @user.location,
+  phone: @user.phone,
   photo_url: @user.photo_url
 }
