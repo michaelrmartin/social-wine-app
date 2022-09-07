@@ -9,5 +9,6 @@
   categories: @wine.categories,
   users: @wine.users,
   country: @wine.origin.country,
+  photo: @wine.photo,
   friendly_created_at: @wine.friendly_created_at
 }

@@ -10,6 +10,7 @@
     origin: wine.origin,
     country: wine.origin.country,
     category: wine.categories,
+    photo: wine.photo,
     friendly_created_at: wine.friendly_created_at,
   }
 end
