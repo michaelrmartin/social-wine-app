@@ -83,3 +83,12 @@ Authorization: Bearer {{jwt}}
 ### User Show
 GET http://localhost:3000/users/1.json
 Content-Type: application/json
+
+### Twilio Post
+POST http://localhost:3000/sendtext.json
+Content-Type: application/json
+
+{
+  "phone": "+17708261460",
+  "textBody": "Hello!"
+}
