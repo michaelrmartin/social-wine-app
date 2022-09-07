@@ -78,9 +78,7 @@ UserWine.create!([
   {favorite: false, user_id: 2, wine_id: 15},
   {favorite: false, user_id: 2, wine_id: 9},
   {favorite: true, user_id: 1, wine_id: 9},
-  {favorite: true, user_id: 3, wine_id: 2},
   {favorite: false, user_id: 1, wine_id: 4},
-  {favorite: false, user_id: 3, wine_id: 3},
   {favorite: true, user_id: 1, wine_id: 1},
 ])
 CategoryWine.create!([
