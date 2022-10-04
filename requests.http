@@ -45,10 +45,13 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Test Name",
-  "email": "test@test.com",
+  "name": "Tes56 Name",
+  "email": "test56@test.com",
   "password": "password",
-  "password_confirmation": "password"
+  "password_confirmation": "password",
+  "bio": "a Man with a hat",
+  "location": "Chicago, IL",
+  "phone": "3125556689"
 }
 
 ### Sessions create (login)

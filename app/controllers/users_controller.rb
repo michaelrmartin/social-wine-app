@@ -21,6 +21,7 @@ class UsersController < ApplicationController
       photo_url: cloudinary_url
     )
     if user.save
+      UserMailer.with(user: user).welcome_email.deliver_now
       render json: { message: "User created successfully" }, status: :created
     else
       render json: { errors: user.errors.full_messages }, status: :bad_request
