@@ -1,24 +1,7 @@
-# README
+# Welcome to QORKD
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## QORKD is a social-based wine recommendation app designed for casual wine drinkers and enthusiasts.
 
-Things you may want to cover:
+### Check out a live version here: [QORKD](https://main--cerulean-fudge-bcb11d.netlify.app/)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Login in with the email "michael@test.com" and password "password".
