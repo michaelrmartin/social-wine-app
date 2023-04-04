@@ -1,5 +1,4 @@
 @jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI0MDU1MDJ9.cOn9ZflB8inRN2Qa_UfUTOgsHWKMzk2qKmnoKXXPu4s
-Rosé
 
 ### Wines Index
 GET http://localhost:3000/wines.json
